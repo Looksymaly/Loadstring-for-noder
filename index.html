@@ -36,14 +36,14 @@
 
         .profile {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            align-items: center; /* Align text and image side by side */
+            gap: 15px; /* Space between text and image */
         }
 
         .profile p {
             font-size: 18px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin: 0; /* Remove default margins */
         }
 
         .profile img {
@@ -72,17 +72,17 @@
     <div class="credits-container">
         <div class="profile">
             <p>Owner: poohdsrggfddd</p>
-            <img src="https://tr.rbxcdn.com/6ccbf8ed05c2b59dbf8fcae99142b2f4/150/150/Image/Png" alt="Owner Profile">
+            <img src="noFilter.png" alt="Owner Profile">
         </div>
 
         <div class="profile">
             <p>Developer: BADRBADUOR1</p>
-            <img src="https://tr.rbxcdn.com/7e8c3cf59ef41ddfe8b2dfb47fdcc9dd/150/150/Image/Png" alt="Developer Profile">
+            <img src="developerbad.png" alt="Developer Profile">
         </div>
     </div>
 
     <!-- Clickable back image -->
-    <img class="back-image" src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Go Back" onclick="goBack()">
+    <img class="back-image" src="back.png" alt="Go Back" onclick="goBack()">
 
     <script>
         function goBack() {
