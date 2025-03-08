@@ -28,37 +28,47 @@
 
         .credits-container {
             margin-top: 30px;
-            font-size: 20px;
-            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
-        a {
-            color: #4da6ff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        a:hover {
-            color: #77c9ff;
-        }
-
-        .back-button {
-            margin-top: 40px;
-            font-size: 16px;
-            font-weight: 900;
-            padding: 15px 30px;
-            border: none;
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
             cursor: pointer;
-            border-radius: 10px;
-            background-color: rgb(30, 30, 30);
-            color: white;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: transform 0.2s ease;
         }
 
-        .back-button:hover {
-            background-color: #555;
-            transform: scale(1.05);
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+
+        .profile p {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .back-image {
+            margin-top: 40px;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .back-image:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -66,11 +76,23 @@
     <h1>Credits</h1>
 
     <div class="credits-container">
-        <p>Owner: <a href="https://www.roblox.com/users/poohdsrggfddd/profile" target="_blank">poohdsrggfddd</a></p>
-        <p>Developer: <a href="https://www.roblox.com/users/BADRBADUOR1/profile" target="_blank">BADRBADUOR1</a></p>
+        <div class="profile">
+            <a href="https://www.roblox.com/users/poohdsrggfddd/profile" target="_blank">
+                <img src="https://tr.rbxcdn.com/6ccbf8ed05c2b59dbf8fcae99142b2f4/150/150/Image/Png" alt="Owner Profile">
+            </a>
+            <p>Owner: poohdsrggfddd</p>
+        </div>
+
+        <div class="profile">
+            <a href="https://www.roblox.com/users/BADRBADUOR1/profile" target="_blank">
+                <img src="https://tr.rbxcdn.com/7e8c3cf59ef41ddfe8b2dfb47fdcc9dd/150/150/Image/Png" alt="Developer Profile">
+            </a>
+            <p>Developer: BADRBADUOR1</p>
+        </div>
     </div>
 
-    <button class="back-button" onclick="goBack()">Go Back</button>
+    <!-- Clickable back image -->
+    <img class="back-image" src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Go Back" onclick="goBack()">
 
     <script>
         function goBack() {
