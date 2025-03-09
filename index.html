@@ -69,18 +69,21 @@
             transform: rotate(5deg) scale(1.1);
         }
 
-        .back-image {
+        .back-btn {
             margin-top: 40px;
-            width: 80px;
-            height: 80px;
+            background-color: #ff8c00;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
             cursor: pointer;
+            border-radius: 5px;
             transition: transform 0.3s ease;
-            opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
         }
 
-        .back-image:hover {
-            transform: scale(1.2);
+        .back-btn:hover {
+            transform: scale(1.1);
+            background-color: #e07b00;
         }
 
         @keyframes fadeIn {
@@ -100,13 +103,24 @@
         </div>
 
         <div class="profile">
-            <p>Developer: BADRBADUOR1</p>
-            <img src="developerbad.png" alt="Developer Profile">
+            <p>Scripter: poohdsrggfddd</p>
+            <img src="noFilter.png" alt="Scripter Profile">
         </div>
+
+        <div class="profile">
+            <p>Site Maker: poohdsrggfddd</p>
+            <img src="noFilter.png" alt="Site Maker Profile">
+        </div>
+
+        <div class="profile">
+            <p>Co-Owner: Badr</p>
+            <img src="developerbad.png" alt="Co-Owner Profile">
+        </div>
+
     </div>
 
-    <!-- Clickable back image -->
-    <img class="back-image" src="back.png" alt="Go Back" onclick="goBack()">
+    <!-- Back button -->
+    <button class="back-btn" onclick="goBack()">Go Back</button>
 
     <script>
         function goBack() {
